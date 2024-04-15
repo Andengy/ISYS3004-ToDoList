@@ -4,7 +4,7 @@ console.log("script loaded");
 
 let addTaskButton = document.getElementById("add-button");
 let newTaskInput = document.getElementById("task-input");
-let todoContainer = document.getElementById("todo-list");
+let todoContainer = document.getElementById("to-do-list");
 let templateElement = document.getElementById("todo-item-template")
 let template = templateElement.innerHTML
 
