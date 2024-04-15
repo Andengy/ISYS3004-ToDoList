@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My Todo List</title>
-    <meta name="Andrew" content="To do List">
+    <meta name="author" content="Andrew">
     <meta name="description" content="Use ToDo list app to explore and interact with the DOM">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -12,26 +12,26 @@
 <body>
     <h1>My To Do list</h1>
     <form>
-        <Label>Task Name:
-            <input id="task-input" type = "text" placeholder="Complete assignment">
-        </Label>
-        <Button id= "add-button" Type = "button">
-            Add Task
-        </Button>
-    </form>
-<ul id="to-do-list">
-</ul>
-
-<script id= "todo-item-template" type = "text/template">
-    <li class= "task">
-        <label>
-            <input class= "checkbox" type="checkbox">
+        <label>Task Name:
+            <input id="task-input" type="text" placeholder="Complete assignment">
         </label>
-        <!-- Task_Name -->
-    <li>
-</script>
+        <button id="add-button" type="button">
+            Add Task
+        </button>
+    </form>
+    <ul id="to-do-list">
+    </ul>
 
-<script src="js/script.js"></script>
+    <script id="todo-item-template" type="text/template">
+        <li class="task">
+            <label>
+                <input class="checkbox" type="checkbox">
+            </label>
+            <!-- Task_Name -->
+        </li>
+    </script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
