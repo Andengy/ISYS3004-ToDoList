@@ -12,6 +12,5 @@ Body {
 .task.completed{
     text-decoration:line-through;
     font-size: 16px;
-    color: red;
-    
+
 }
