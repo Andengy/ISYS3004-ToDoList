@@ -20,20 +20,22 @@ function onAddTaskClicked(event){
 
 }
 
-function onTodoClicked(event){
-    let targetElement = event.target
+function onTodoClicked(event) {
+    let targetElement = event.target;
 
-    while(!targetElement.classList.contains("task")){
-        targetElement = targetElement.parentElement
-        
+    while (!targetElement.classList.contains("task")) {
+        targetElement = targetElement.parentElement;
+        if (!targetElement) return; // Add a check to handle cases where the targetElement becomes null
     }
-    let checkbox = targetElement.querySelector(".checkbox")
-    if(checkbox.checked){
-        targetElement.classList.add("completed")
+
+    let checkbox = targetElement.querySelector(".checkbox");
+    if (checkbox.checked) {
+        targetElement.classList.add("completed");
     } else {
-        targetElement.classList.remove("completed")
+        targetElement.classList.remove("completed");
     }
 }
+
 
 // 3. Linking events and element to the function
 addTaskButton.addEventListener('click', onAddTaskClicked);
