@@ -1,1 +1,14 @@
+Body {
+    Font-family: Arial
+    font-size 16px;
+    Width: 600px;
+    Margin: 0 auto;
+}
 
+.task {
+        list-style: none;
+}
+
+.task.completed{
+    text-decoration:line-through;
+}
