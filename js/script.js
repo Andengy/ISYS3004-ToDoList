@@ -13,7 +13,7 @@ function onAddTaskClicked(event){
     let taskName = newTaskInput.value;
     newTaskInput.value = ""
 
-    let todoHTML = template.replace("<!-- task_name -->", taskName)
+    let todoHTML = template.replace("<!-- Task_Name -->", taskName)
 
 
     todoContainer.insertAdjacentHTML('afterbegin', todoHTML);
