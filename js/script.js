@@ -10,7 +10,8 @@ let todoContainer = document.getElementById("todo-list");
 function onAddTaskClicked(event){
     let taskName = newTaskInput.value;
     newTaskInput.value = ""
-    todoContainer.insertAdjacentHTML('afterbegin',taskName);
+    todoContainer.insertAdjacentHTML('afterbegin', taskName);
+
 
 }
 
