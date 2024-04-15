@@ -25,7 +25,7 @@ function onTodoClicked(event) {
 
     while (!targetElement.classList.contains("task")) {
         targetElement = targetElement.parentElement;
-        if (!targetElement) return; // Add a check to handle cases where the targetElement becomes null
+        if (!targetElement) return;
     }
 
     let checkbox = targetElement.querySelector(".checkbox");
