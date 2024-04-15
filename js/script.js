@@ -7,6 +7,7 @@ let newTaskInput = document.getElementById("task-input");
 let todoContainer = document.getElementById("to-do-list");
 let templateElement = document.getElementById("todo-item-template")
 let template = templateElement.innerHTML
+let showActiveButton = document.getElementById("show-active")
 
 // 2. Write events
 function onAddTaskClicked(event){
@@ -36,6 +37,9 @@ function onTodoClicked(event) {
     }
 }
 
+function showActive(){
+
+}
 
 // 3. Linking events and element to the function
 addTaskButton.addEventListener('click', onAddTaskClicked);
