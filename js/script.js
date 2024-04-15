@@ -20,6 +20,21 @@ function onAddTaskClicked(event){
 
 }
 
+function onTodoClicked(event){
+    let targetElement = event.toElement
+
+    while(!targetElement.classList.contains("task")){
+        targetElement = targetElement.parentElement
+        
+    }
+    let checkbox = targetElement.querySelect(".checkbox")
+    if(checkbox.checked){
+        targetElement.classList.add("completed")
+    } else {
+        targetElement.classList.remove("completed")
+    }
+}
+
 // 3. Linking events and element to the function
 addTaskButton.addEventListener('click', onAddTaskClicked);
-
+todoContainer.addEventListener('click', onTodoClicked)
