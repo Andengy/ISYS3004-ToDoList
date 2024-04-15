@@ -27,7 +27,7 @@ function onTodoClicked(event){
         targetElement = targetElement.parentElement
         
     }
-    let checkbox = targetElement.querySelect(".checkbox")
+    let checkbox = targetElement.querySelector(".checkbox")
     if(checkbox.checked){
         targetElement.classList.add("completed")
     } else {
