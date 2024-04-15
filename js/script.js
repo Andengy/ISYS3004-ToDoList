@@ -9,11 +9,11 @@ let todoContainer = document.getElementById("todo-list");
 // 2. Write events
 function onAddTaskClicked(event){
     let taskName = newTaskInput.value;
-    newTaskInput.value = " "
-    todoContainer.insertAdjacentHTML('afterbegin',taskName)
+    newTaskInput.value = ""
+    todoContainer.insertAdjacentHTML('afterbegin',taskName);
 
 }
 
 // 3. Linking events and element to the function
-addTaskButton.addEventListener('click', onAddTaskClicked)
+addTaskButton.addEventListener('click', onAddTaskClicked);
 
